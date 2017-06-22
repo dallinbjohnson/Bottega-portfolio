@@ -1,10 +1,4 @@
 GIT
-  remote: https://github.com/dallinbjohnson/johnson_copy_right
-  revision: 1fc6f61b8e8791cd39165a8c89e0a56339190987
-  specs:
-    johnson_copy_right (0.1.0)
-
-GIT
   remote: https://github.com/twbs/bootstrap-rubygem
   revision: 7cdeca9a0e8db3bb7548d9fa5bdaad9b644fca32
   specs:
@@ -88,6 +82,7 @@ GEM
     jbuilder (2.6.4)
       activesupport (>= 3.0.0)
       multi_json (>= 1.2)
+    johnson_copy_right (0.1.0)
     jquery-rails (4.3.1)
       rails-dom-testing (>= 1, < 3)
       railties (>= 4.2.0)
@@ -219,7 +214,7 @@ DEPENDENCIES
   font-awesome-rails (~> 4.7, >= 4.7.0.2)
   friendly_id (~> 5.1.0)
   jbuilder (~> 2.5)
-  johnson_copy_right!
+  johnson_copy_right (~> 0.1.0)
   jquery-rails
   kaminari (~> 1.0, >= 1.0.1)
   listen (~> 3.0.5)
