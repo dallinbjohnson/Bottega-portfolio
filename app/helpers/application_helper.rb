@@ -16,6 +16,10 @@ module ApplicationHelper
     end
   end
 
+  def copyright_generator
+    JohnsonCopyRight::Renderer.copyright 'Dallin Johnson', 'All rights reserved'
+  end
+
   def nav_items
     [
       {
