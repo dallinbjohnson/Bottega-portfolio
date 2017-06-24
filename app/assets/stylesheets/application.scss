@@ -137,10 +137,12 @@ body {
   .masthead {
     position: fixed;
     top: 0;
+    z-index: 10;
   }
   .mastfoot {
     position: fixed;
     bottom: 0;
+    z-index: -1;
   }
   /* Start the vertical centering */
   .site-wrapper-inner {
