@@ -1,5 +1,6 @@
 class BlogsController < ApplicationController
   before_action :set_blog, only: [:show, :edit, :update, :destroy, :toggle_status]
+  before_action :set_sidebar_topics, except: [:update, :create, :destroy,  :toggle_status]
   layout "blog"
   access all: [:show, :index], user: {except: [:destroy, :new, :update, :edit, :toggle_status]}, site_admin: :all
 
@@ -74,10 +75,10 @@ class BlogsController < ApplicationController
   end
 
   def toggle_status
-    if @blog.draft?
-      @blog.published!
-    elsif @blog.published?
-      @blog.draft!
+    if @blog.Draft?
+      @blog.Published!
+    elsif @blog.Published?
+      @blog.Draft!
     end
     
     redirect_to blogs_url, notice: "Post status has been updated."
@@ -92,5 +93,9 @@ class BlogsController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def blog_params
       params.require(:blog).permit(:title, :body, :topic_id)
+    end
+
+    def set_sidebar_topics
+      @set_sidebar_topics = Topic.with_blogs.order(:title)
     end
 end
