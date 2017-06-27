@@ -18,6 +18,11 @@ class TopicsController < ApplicationController
   private
 
   def set_sidebar_topics
-    @set_sidebar_topics = Topic.with_blogs.order(:title)
+    if logged_in?(:site_admin)
+      @set_sidebar_topics = Topic.with_blogs.order(:title)
+    else
+      @set_sidebar_topics = Topic.with_blogs_published.order(:title)
+    end
   end
+
 end
