@@ -6,8 +6,28 @@
 @import "jquery-ui";
 @import "gritter";
 
+@font-face {
+  font-family: 'Open Sans';
+  src:font-url('Open_Sans/OpenSans-Regular.ttf')
+}
+
+@font-face {
+  font-family: 'Sansita';
+  src:font-url('Sansita/Sansita-Regular.ttf')
+}
+
 body {
   min-height: 75rem; /* Can be removed; just added for demo purposes */
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: 'Sansita', sans-serif;
 }
 
 .navbar {

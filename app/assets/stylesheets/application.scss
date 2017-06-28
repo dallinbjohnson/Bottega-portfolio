@@ -31,11 +31,21 @@ html,
 body {
   height: 100%;
   // background-color: #333;
+  font-family: 'Open Sans', sans-serif;
 }
 body {
   color: #fff;
   text-align: center;
   text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: 'Sansita', sans-serif;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -218,6 +228,7 @@ body {
 .app-card-container {
   color: black;
   text-align: left;
+  margin: 80px 0;
 }
 .app-card-container > .card, .contact-card-container > .card {
   padding: 30px;
