@@ -4,10 +4,10 @@ class Topic < ApplicationRecord
 	has_many :blogs
 
 	def self.with_blogs
-			includes(:blogs).where.not(blogs: { id: nil })
+		includes(:blogs).where.not(blogs: { id: nil })
 	end
 
 	def self.with_blogs_published
-		includes(:blogs).where.not(blogs: { id: nil, status: 'Draft' })
+		includes(:blogs).where.not(blogs: { id: nil, status: 'Draft' }) 
 	end
 end
