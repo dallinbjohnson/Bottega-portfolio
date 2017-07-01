@@ -1,6 +1,10 @@
 module SetSidebarTopics
 	extend ActiveSupport::Concern
 
+	included do
+  	before_action :set_sidebar_topics
+  end
+
 	private
 		def set_sidebar_topics
 		  if logged_in?(:site_admin)

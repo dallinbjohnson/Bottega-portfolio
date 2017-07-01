@@ -14,11 +14,16 @@ a:hover {
 
 /* Custom default button */
 .btn-secondary,
-.btn-secondary:hover,
 .btn-secondary:focus {
   color: #333;
   text-shadow: none; /* Prevent inheritance from `body` */
   background-color: #fff;
+  border: .05rem solid #fff;
+}
+.btn-secondary:hover {
+  color: #fff;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #333;
   border: .05rem solid #fff;
 }
 
@@ -122,6 +127,7 @@ h6, .h6 {
 
 .cover {
   padding: 0 1.5rem;
+  margin: 80px 0;
 }
 .cover .btn-lg {
   padding: .75rem 1.25rem;
@@ -228,7 +234,9 @@ h6, .h6 {
 .app-card-container {
   color: black;
   text-align: left;
-  margin: 80px 0;
+}
+.app-card-container, .contact-card-container {
+  margin: 90px 0;
 }
 .app-card-container > .card, .contact-card-container > .card {
   padding: 30px;

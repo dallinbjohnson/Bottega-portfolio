@@ -42,7 +42,7 @@ class PortfoliosController < ApplicationController
 
     respond_to do |format|
       if @portfolio_item.update(portfolio_params)
-        format.html { redirect_to portfolios_path, notice: 'Portfolio was successfully updated.' }
+        format.html { redirect_to portfolio_show_path, notice: 'Portfolio was successfully updated.' }
       else
         format.html { render :edit }
       end
