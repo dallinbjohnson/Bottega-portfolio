@@ -17,7 +17,7 @@
 }
 
 body {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: 'Open Sans', sans-serif;
   color: #555;
 }
 
@@ -27,7 +27,7 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Sansita', sans-serif;
   font-weight: normal;
   color: #333;
 }
@@ -190,4 +190,20 @@ h6, .h6 {
 }
 .comment-name {
   font-weight: 700;
+}
+.blog-sidebar-source {
+  margin-top: 20px;
+}
+.edit_icons a {
+  font-size: 1.3em;
+  padding: 0 5px;
+}
+.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-brand {
+  color: #cdddeb;
+}
+.navbar-light .navbar-nav .nav-link.active {
+  color: #fff;
+}
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-brand:hover {
+  color: #fff;
 }

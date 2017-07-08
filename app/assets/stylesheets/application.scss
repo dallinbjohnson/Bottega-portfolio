@@ -14,11 +14,16 @@ a:hover {
 
 /* Custom default button */
 .btn-secondary,
-.btn-secondary:hover,
 .btn-secondary:focus {
   color: #333;
   text-shadow: none; /* Prevent inheritance from `body` */
   background-color: #fff;
+  border: .05rem solid #fff;
+}
+.btn-secondary:hover {
+  color: #fff;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #333;
   border: .05rem solid #fff;
 }
 
@@ -31,11 +36,21 @@ html,
 body {
   height: 100%;
   // background-color: #333;
+  font-family: 'Open Sans', sans-serif;
 }
 body {
   color: #fff;
   text-align: center;
   text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: 'Sansita', sans-serif;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -112,6 +127,7 @@ body {
 
 .cover {
   padding: 0 1.5rem;
+  margin: 80px 0;
 }
 .cover .btn-lg {
   padding: .75rem 1.25rem;
@@ -215,6 +231,40 @@ body {
 .tech-news > .card {
   padding: 20px;
 }
-
+.app-card-container {
+  color: black;
+  text-align: left;
+}
+.app-card-container, .contact-card-container {
+  margin: 90px 0;
+}
+.app-card-container > .card, .contact-card-container > .card {
+  padding: 30px;
+}
+.app-card-container .btn {
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+.profile-img {
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+.contact-card-container {
+  color: black;
+}
+.contact-card-container a {
+  color: #428bca;
+}
+.card-block {
+  margin: 5px 0px;
+}
+.skill {
+  margin: 10px 0px;
+}
+.school-link,
+.school-link:hover,
+.school-link:visited {
+  color: black;
+}
 
 

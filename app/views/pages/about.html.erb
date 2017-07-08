@@ -1,16 +1,182 @@
-<h1>About Me</h1>
+<div class="app-card-container">
+	<div class="card">
+		<h1>About Me</h1>
 
-<hr>
+		<hr>
 
-<div class="row">
-	<div class="col-md-4">
-		<%= image_tag "ProfileImage.jpg", width: 300, alt: "Profile Image" %>
-	</div>
+		<div class="row">
+			<div class="col-md-4">
+				<%= image_tag "ProfileImage.jpg", width: 300, alt: "Profile Image", class: 'profile-img' %>
 
-	<div class="col-md-8">
-	<p>Sample text goes there!! Sample text goes there!! Sample text goes there!! Sample text goes there!! Sample text goes there!! Sample text goes there!! Sample text goes there!! Sample text goes there!! Sample text goes there!! Sample text goes there!! Sample text goes there!! Sample text goes there!! Sample text goes there!! Sample text goes there!! Sample text goes there!! Sample text goes there!!</p>
+				<div class="skills">
+					<% @skills.each do |skill| %>
+						<div class="skill">
+							<h4><%= skill.title %></h4>
 
-	<p> Sample text goes there!! Sample text goes there!! Sample text goes there!! Sample text goes there!! Sample text goes there!! Sample text goes there!! Sample text goes there!! Sample text goes there!! Sample text goes there!! Sample text goes there!! Sample text goes there!! Sample text goes there!!</p>
+							<div class="progress">
+								<div class="progress-bar progress-bar-striped bg-warning" 
+										role="progressbar" 
+										aria-valuenow="<%= skill.percent_utilized %>" 
+										aria-valuemax="100" 
+										style="width: <%= skill.percent_utilized %>%"></div>
+							</div>
+						</div>
+					<% end %>
+				</div>
+
+			</div>
+
+			<div class="col-md-8">
+				<p>I am the oldest of six kids and I love my family. My family and I have done many family projects together and my parents have taught us how to work hard. These experiences with my family have taught me to live my life by working hard and playing hard.</p>
+
+				<p>I have always loved technology growing up and I was always good at being able to learn and understand technology. My dad works in the IT field and has spent a lot of time helping me cultivate my love of technology. I have learned that by taking a big problem and braking it in to smaller more manageable peaces and diligently work. Things that seem impossible become possible.</p>
+
+				<p>
+					<button class="btn btn-primary"
+									type="button" 
+									data-toggle="collapse" 
+									data-target="#jobHistory"
+									aria-expanded="false"
+									aria-controler="jobHistory">Job History
+					</button>
+
+					<button class="btn btn-primary"
+									type="button" 
+									data-toggle="collapse" 
+									data-target="#education"
+									aria-expanded="false"
+									aria-controler="education">Education
+					</button>
+
+					<button class="btn btn-primary"
+									type="button" 
+									data-toggle="collapse" 
+									data-target="#awards"
+									aria-expanded="false"
+									aria-controler="education">Achievements/Awards
+					</button>
+				</p>
+
+				<p>
+					<div class="collapse" id="jobHistory">
+						<div class="card card-block">
+							<h4>Macey’s, Lehi, Utah <br /> Courtesy Clerk</h4>
+							<span class="text-right">Apr. 2015 - May 2017</span>
+
+							<ul>
+								<li>Customer Service Associate</li>
+								<li>Bagger</li>
+								<li>Clean the Store</li>
+								<li>Bring in Carts</li>
+							</ul>
+						</div>
+
+						<div class="card card-block">
+							<h4>Lowes, Lehi, Utah <br /> Customer Service Rep.</h4>
+							<span class="text-right">Nov. 2014 – May 2017</span>
+
+							<ul>
+								<li>Customer Service Associate</li>
+								<li>Cashier </li>
+								<li>Lumber Loader</li>
+								<li>Delivery Driver</li>
+							</ul>
+						</div>
+
+						<div class="card card-block">
+							<h4>Remedy Informatics, Sandy, Utah <br /> Jr. Computer Technician</h4>
+							<span class="text-right">June 2012 - Sept 2012</span>
+
+							<ul>
+								<li>Administered network wiring, data communication testing, and certification</li>
+								<li>Tested and repaired computer hardware and software</li>
+								<li>Provided desktop software installation and support</li>
+							</ul>
+						</div>
+
+						<div class="card card-block">
+							<h4>InspectorGrassIT, LLC, Lehi, Utah <br /> Lead Grounds Technician</h4>
+							<span class="text-right">May 2004 - Sept 2012</span>
+
+							<ul>
+								<li>Cared for established lawns by mulching, aerating, weeding, grubbing and removing thatch, and trimming and edging around flower beds, walks, and walls</li>
+								<li>Mixed and sprayed/spread fertilizers, herbicides, or insecticides onto grass, shrubs, and trees</li>
+								<li>Mowed and edged lawns, using riding mowers, hand power mowers and edgers.</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="collapse" id="education">
+
+						<div class="card card-block">
+							<div class="row">
+								<div class="col-md-2">
+									<a href="http://bottega.tech/" target="_blank"><%= image_tag "bottegalogo.jpg", width: "100", height: "100" %></a>
+								</div>
+
+								<div class="col-md-10">
+									<h4>Bottega Tech Boot camp (Lehi, UT)</h4>
+									<span class="text-right">May 2017 - Aug. 2017</span>
+
+									<ul>
+										<li>HTML/CSS/bootstrap</li>
+										<li>Ruby</li>
+										<li>Ruby on Rails</li>
+										<li>Command Line</li>
+										<li>Git/Github</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="card card-block">
+							<div class="row">
+								<div class="col-md-2">
+									<a href="http://www.uvu.edu/" target="_blank"><%= image_tag "logo_UVUbig.png", width: "100", height: "65" %></a>
+								</div>
+
+								<div class="col-md-10">
+									<h4>Utah Valley University (Orem, UT)</h4>
+									<span class="text-right">2014 - Expected Graduation 2019</span>
+
+									<ul>
+										<li>Major: INFS-Business Intelligence Systems</li>
+										<li>GPA: 3.53</li>
+										<li>The Society for Collegiate Leadership & Achievement</li>
+										<li>Phi Theta Kappa Honor Society</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="collapse" id="awards">
+						<div class="card card-block">
+							Eagle scout
+						</div>
+
+						<div class="card card-block">
+							Denali scouting award
+						</div>
+
+						<div class="card card-block">
+							Marching Band Drum Major
+						</div>
+
+						<div class="card card-block">
+							The Society for Collegiate Leadership & Achievement
+						</div>
+
+						<div class="card card-block">
+							Phi Theta Kappa Honor Society
+						</div>
+					</div>
+				</p>
+
+			</div>
+		</div>
 
 	</div>
 </div>
+

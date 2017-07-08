@@ -9,13 +9,17 @@
 
 				<div class="col-md-10">
 					<div>
-						<%= comment.content %>
+						<%= markdown comment.content %>
 					</div>
 					
 					<div class="comment-attribution">
 						Comment posted by <span class="comment-name"><%= comment.user.first_name %></span> <%= distance_of_time_in_words(comment.created_at, Time.now) %> ago
 					</div>
 				</div>
+
+				<!-- <div class="col-md-1">
+					<%= link_to fa_icon('trash'), method: :delete, data: { confirm: 'Are you sure you want to delete this post?'} if logged_in?(:site_admin) %>
+				</div> -->
 
 			</div>
 		</div>
