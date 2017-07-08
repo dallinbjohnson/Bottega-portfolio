@@ -207,3 +207,6 @@ h6, .h6 {
 .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-brand:hover {
   color: #fff;
 }
+.navbar-light .navbar-toggler {
+  z-index: 3;
+}
