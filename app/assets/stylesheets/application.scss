@@ -241,6 +241,10 @@ h6, .h6 {
 .app-card-container > .card, .contact-card-container > .card {
   padding: 30px;
 }
+.app-card-container .btn {
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
 .profile-img {
   border: 1px solid grey;
   border-radius: 5px;
@@ -262,4 +266,5 @@ h6, .h6 {
 .school-link:visited {
   color: black;
 }
+
 
