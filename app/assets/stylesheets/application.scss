@@ -248,6 +248,7 @@ h6, .h6 {
 .profile-img {
   border: 1px solid grey;
   border-radius: 5px;
+  width: 100%;
 }
 .contact-card-container {
   color: black;
@@ -282,6 +283,11 @@ h6, .h6 {
   background: image-url('EmbersPic') no-repeat;
   background-size: cover;
  }
+}
+@media (max-width: 62em) {
+  .nav-masthead {
+    width: 100%;
+  }
 }
 
 
