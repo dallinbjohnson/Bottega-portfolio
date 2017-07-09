@@ -7,7 +7,7 @@ ready = ->
 			"Everybody should learn how to program a computer because it teaches you how to think. – Steve Jobs"
 		]
 		typeSpeed: 30
-		
+		backDelay: 6000
 		loop: true
 	return
 
