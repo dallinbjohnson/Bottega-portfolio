@@ -156,7 +156,7 @@ h6, .h6 {
     z-index: 10;
   }
   .mastfoot {
-    position: fixed;
+    position: absolute;
     bottom: 0;
     z-index: -1;
   }
@@ -268,7 +268,7 @@ h6, .h6 {
   color: black;
 }
 
-@media (max-width: 35em) {
+@media (max-width: 40em) {
   .background {
   position: fixed;
   top: 50%;
