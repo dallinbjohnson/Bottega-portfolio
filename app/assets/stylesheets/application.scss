@@ -163,7 +163,6 @@ h6, .h6 {
   /* Start the vertical centering */
   .site-wrapper-inner {
     vertical-align: middle;
-    padding: 0px;
   }
   /* Handle the widths */
   .masthead,
@@ -238,7 +237,6 @@ h6, .h6 {
 }
 .app-card-container, .contact-card-container {
   margin: 90px 0;
-  margin-bottom: 120px;
 }
 .app-card-container > .card, .contact-card-container > .card {
   padding: 30px;
@@ -285,12 +283,6 @@ h6, .h6 {
   background: image-url('EmbersPic') no-repeat;
   background-size: cover;
  }
- .mastfoot {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    z-index: -1;
-  }
 }
 @media (max-width: 62em) {
   .nav-masthead {
