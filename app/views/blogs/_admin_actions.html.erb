@@ -1,6 +1,6 @@
 <% if logged_in?(:site_admin) %>
 	<nav class="breadcrumb">
-		<%= link_to blog.status, toggle_status_blog_path(blog) %> /
+		<%= link_to blog.status.capitalize, toggle_status_blog_path(blog) %> /
 		<%= link_to 'Edit', edit_blog_path(blog) %> /
 		<%= link_to 'Delete', blog, method: :delete, data: { confirm: 'Are you sure?' } %>
 	</nav>

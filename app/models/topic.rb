@@ -8,6 +8,6 @@ class Topic < ApplicationRecord
 	end
 
 	def self.with_blogs_published
-		includes(:blogs).where.not(blogs: { id: nil, status: 'Draft' }) 
+		includes(:blogs).where.not(blogs: { id: nil, status: 'draft' }) 
 	end
 end
