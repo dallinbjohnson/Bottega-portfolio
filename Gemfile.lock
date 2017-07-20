@@ -274,7 +274,7 @@ DEPENDENCIES
   cocoon (~> 1.2, >= 1.2.10)
   coderay (~> 1.1, >= 1.1.1)
   coffee-rails (~> 4.2)
-  devise (~> 4.3)
+  devise
   dotenv-rails (~> 2.2, >= 2.2.1)
   font-awesome-rails (~> 4.7, >= 4.7.0.2)
   friendly_id (~> 5.1.0)

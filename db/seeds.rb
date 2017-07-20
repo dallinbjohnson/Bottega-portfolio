@@ -17,7 +17,7 @@ User.create!(
 puts "1 Admin user created"
 
 User.create!(
-	email: "sample1@gmail.com",
+	email: "Admin@gmail.com",
 	password: "asdfasdf",
 	password_confirmation: "asdfasdf",
 	name: "Regular User",
