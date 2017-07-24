@@ -92,3 +92,10 @@ footer p {
 .portfolio_container {
   padding-top: 30px;
 }
+.card {
+  border: 2px solid white;
+}
+.card:hover {
+  border: 2px solid lightgrey;
+  transition-delay: .3s;
+}
