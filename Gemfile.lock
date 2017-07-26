@@ -153,6 +153,7 @@ GEM
     multi_json (1.12.1)
     multipart-post (2.0.0)
     naught (1.1.0)
+    newrelic_rpm (4.3.0.335)
     nio4r (2.1.0)
     nokogiri (1.8.0)
       mini_portile2 (~> 2.2.0)
@@ -286,6 +287,7 @@ DEPENDENCIES
   kaminari (~> 1.0, >= 1.0.1)
   listen (~> 3.0.5)
   mini_magick (~> 4.7, >= 4.7.2)
+  newrelic_rpm
   petergate (~> 1.7, >= 1.7.5)
   pg (~> 0.18)
   pry-byebug
@@ -306,4 +308,4 @@ RUBY VERSION
    ruby 2.4.0p0
 
 BUNDLED WITH
-   1.15.2
+   1.15.3
