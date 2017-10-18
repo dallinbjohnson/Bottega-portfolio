@@ -10,21 +10,21 @@ User.create!(
 	email: "sample@gmail.com",
 	password: "asdfasdf",
 	password_confirmation: "asdfasdf",
-	name: "Admin User",
-	roles: "site_admin"
+	name: "Regular User",
+	roles: "user"
 )
 
-puts "1 Admin user created"
+puts "1 regular user created"
 
 User.create!(
 	email: "Admin@gmail.com",
 	password: "asdfasdf",
 	password_confirmation: "asdfasdf",
-	name: "Regular User",
+	name: "Admin User",
 	roles: "site_admin"
 )
 
-puts "1 regular user created"
+puts "1 Admin user created"
 
 3.times do |topic|
 	Topic.create!(
